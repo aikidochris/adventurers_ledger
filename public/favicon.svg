@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Outer Glow/Background -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Eye Shape -->
+  <path d="M5 50 Q 50 10 95 50 Q 50 90 5 50 Z" fill="#1a0505" stroke="#7f1d1d" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Iris -->
+  <circle cx="50" cy="50" r="22" fill="#991b1b" />
+  
+  <!-- Pupil (Slit) -->
+  <ellipse cx="50" cy="50" rx="3" ry="18" fill="#000" />
+  
+  <!-- Veins/Details -->
+  <path d="M20 50 Q 35 45 40 50" stroke="#450a0a" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M80 50 Q 65 55 60 50" stroke="#450a0a" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>
